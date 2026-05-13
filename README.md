@@ -37,8 +37,8 @@ WebSocket Communication:
 
 ### Prerequisites
 
-JDK (Java Development Kit) 17 or later.
-Maven
+- JDK (Java Development Kit) 17 or later.
+- Maven
 
 ### Running the Application
 
