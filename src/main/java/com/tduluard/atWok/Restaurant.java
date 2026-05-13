@@ -47,8 +47,12 @@ public class Restaurant {
                 Client client = new Client(this, i, logger);
                 client.start();
                 clients.add(client);
-                
-                try { Thread.sleep(300); } catch (InterruptedException _) {}
+
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             }
 
             for (Client client : clients) {
